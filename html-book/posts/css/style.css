@@ -34,6 +34,8 @@ img {
   vertical-align: bottom; /* 画像下のスペースを消す */
 }
 
+/* ヘッダーコンテナ */
+
 @media (min-width: 768px) {
   .header-container {
     margin: 0 auto;
@@ -41,6 +43,8 @@ img {
     max-width: 1040px;
   }
 }
+
+/* パンくずリストコンテナ */
 
 .breadcrumb {
   display: none;
@@ -51,79 +55,46 @@ img {
   }
   .bc-container {
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 12px 20px;
     max-width: 1040px;
   }
 }
 
-/**
- * ***************************************
- * ページ下部
- * ***************************************
- *
- * ページ下部コンテナ
- */
-.bottom-container {
-  padding: 0 4% 0 4%;
-}
-@media (min-width: 768px) {
-  .bottom-container {
-    margin: 0 auto;
-    padding: 0 20px 0 20px;
-    max-width: 1040px;
-  }
-}
+/* メインコンテナ */
 
-/**
- * ---------------------------------------
- * ページ下部モジュール
- */
-
-/**
- * ***************************************
- * フッター
- * ***************************************
- *
- * フッターコンテナ
- */
-.footer-container {
-  padding: 0 4%;
-}
-@media (min-width: 768px) {
-  .footer-container {
-    max-width: 1040px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-}
-
-/**
- * ---------------------------------------
- * フッターモジュール
- */
-
-/**
- * ***************************************
- * メインコンテナ
- * ***************************************
- */
-/**
- * ***************************************
- * ［post.html］記事ページ - メインコンテナ
- * ***************************************
- */
 .post .main-container {
-  padding: 0 4% 0 4%;
+  padding: 80px 4% 0 4%;
 }
 @media (min-width: 768px) {
   .post .main-container {
     max-width: 1040px;
     margin: 0 auto;
-    padding: 0 20px 0 20px;
+    padding: 80px 20px 0 20px;
   }
 }
 
-/**
- * ---------------------------------------
- * ［post.html］記事ページ - モジュール
- */
+/* ページ下部コンテナ */
+
+.bottom-container {
+  padding: 60px 4% 0 4%;
+}
+@media (min-width: 768px) {
+  .bottom-container {
+    margin: 0 auto;
+    padding: 60px 20px 0 20px;
+    max-width: 1040px;
+  }
+}
+
+/* フッターコンテナ */
+
+.footer-container {
+  padding: 60px 4%;
+}
+@media (min-width: 768px) {
+  .footer-container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+}
