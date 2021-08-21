@@ -219,6 +219,39 @@ img {
     max-width: 600px;
     margin: 0 auto 60px auto;
   }
+
+  h2 {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 30px;
+    background: #000;
+    border-radius: 10px 10px 0 0;
+    font-family: "Croissant One", cursive;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #fff;
+  }
+
+  .profile {
+    display: flex;
+    padding: 1rem;
+    border: 1px solid #000;
+  }
+  .pr-photo {
+    flex: 0 0 100px;
+    margin-right: 1rem;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+  .pr-text {
+    flex: 1 1 auto;
+    p {
+      margin: 0;
+      line-height: 1.9;
+    }
+  }
 }
 
 .info-box {

@@ -229,6 +229,48 @@ img {
   }
 }
 
+.post-footer h2 {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 30px;
+  background: #000;
+  border-radius: 10px 10px 0 0;
+  font-family: "Croissant One", cursive;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.post-footer .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+
+.post-footer .pr-photo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+  margin-right: 1rem;
+}
+
+.post-footer .pr-photo img {
+  border-radius: 50%;
+}
+
+.post-footer .pr-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.post-footer .pr-text p {
+  margin: 0;
+  line-height: 1.9;
+}
+
 .info-box {
   margin: 30px 0;
   padding: 2rem;
