@@ -230,6 +230,29 @@ img {
   }
 }
 
+.chat {
+  margin: 30px 0;
+
+  .chat-1st {
+    display: flex;
+    margin: 15px 0;
+
+    .face {
+      margin: 0 10px 0 0;
+    }
+    .talk {
+      background: #b8e5ea;
+    }
+  }
+  .talk {
+    padding: 1.5rem;
+    border-radius: 20px;
+    p {
+      margin: 0;
+    }
+  }
+}
+
 /* ページ下部コンテナ */
 
 .page-bottom {
