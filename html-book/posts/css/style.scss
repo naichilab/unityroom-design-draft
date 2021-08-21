@@ -80,6 +80,7 @@ img {
     list-style: none;
 
     @include pc() {
+      display: flex !important;
       flex-direction: row;
       justify-content: flex-end;
     }

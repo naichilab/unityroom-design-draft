@@ -85,6 +85,9 @@ img {
 
 @media (min-width: 768px) {
   .page-header .header-nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
