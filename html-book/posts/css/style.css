@@ -59,6 +59,17 @@ img {
   border-bottom: 1px solid #d8d8d8;
 }
 
+.page-header .header-logo {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.page-header .header-logo img {
+  width: 130px;
+}
+
 .page-header .sitetitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,6 +87,12 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 1040px;
+  }
+  .page-header .header-logo {
+    padding: 0;
+  }
+  .page-header .header-logo img {
+    width: 180px;
   }
   .page-header .sitetitle {
     display: block;
