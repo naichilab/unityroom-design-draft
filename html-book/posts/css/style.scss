@@ -1,4 +1,13 @@
-@charset "UTF-8";
+@charset "utf-8";
+
+$breakpoint: 768px;
+
+@mixin pc() {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
 /**
  * ***************************************
  * ページ全体に関わるCSSの設定
@@ -7,25 +16,20 @@
 html *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 /* フォント */
 html {
   font-size: 14px;
 }
-
-@media (min-width: 768px) {
+@include pc() {
   html {
     font-size: 16px;
   }
 }
-
 body {
   font-family: sans-serif;
 }
-
 /* ベースのリンクカラー */
 a {
   color: #f30;
@@ -35,17 +39,17 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  vertical-align: bottom;
-  /* 画像下のスペースを消す */
+  vertical-align: bottom; /* 画像下のスペースを消す */
 }
 
 /* ヘッダーコンテナ */
+
 .page-header {
   background: url(../images/header-topline.svg) repeat-x;
   border-bottom: 1px solid #d8d8d8;
 }
 
-@media (min-width: 768px) {
+@include pc() {
   .header-container {
     margin: 0 auto;
     padding: 0 20px;
@@ -54,10 +58,10 @@ img {
 }
 
 /* パンくずリストコンテナ */
+
 .breadcrumb {
   display: none;
 }
-
 @media (min-width: 768px) {
   .breadcrumb {
     display: block;
@@ -70,17 +74,18 @@ img {
   }
 }
 
-.post .main-container {
-  padding: 80px 4% 0 4%;
-  background: url(../images/post-bg.svg) repeat-x;
-  background-position: 0 10px;
-}
-
-@media (min-width: 768px) {
-  .post .main-container {
-    max-width: 1040px;
-    margin: 0 auto;
-    padding: 80px 20px 0 20px;
+.post {
+  .main-container {
+    padding: 80px 4% 0 4%;
+    background: url(../images/post-bg.svg) repeat-x;
+    background-position: 0 10px;
+  }
+  @include pc() {
+    .main-container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 80px 20px 0 20px;
+    }
   }
 }
 
@@ -90,10 +95,7 @@ img {
 
 .post-contents {
   margin: 0 0 60px 0;
-}
-
-@media (min-width: 768px) {
-  .post-contents {
+  @include pc() {
     max-width: 600px;
     margin: 0 auto 60px auto;
   }
@@ -101,16 +103,14 @@ img {
 
 .post-footer {
   margin: 0 0 60px 0;
-}
-
-@media (min-width: 768px) {
-  .post-footer {
+  @include pc() {
     max-width: 600px;
     margin: 0 auto 60px auto;
   }
 }
 
 /* ページ下部コンテナ */
+
 .page-bottom {
   background: url(../images/bottom-bg.svg);
 }
@@ -118,8 +118,7 @@ img {
 .bottom-container {
   padding: 60px 4% 0 4%;
 }
-
-@media (min-width: 768px) {
+@include pc() {
   .bottom-container {
     margin: 0 auto;
     padding: 60px 20px 0 20px;
@@ -128,6 +127,7 @@ img {
 }
 
 /* フッターコンテナ */
+
 .page-footer {
   background: #000;
   color: #fff;
@@ -136,12 +136,10 @@ img {
 .footer-container {
   padding: 60px 4%;
 }
-
-@media (min-width: 768px) {
+@include pc() {
   .footer-container {
     max-width: 1040px;
     margin: 0 auto;
     padding: 60px 20px;
   }
 }
-/*# sourceMappingURL=style.css.map */
