@@ -595,6 +595,21 @@ img {
   color: #fff;
 }
 
+.page-footer .footer-logo {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.page-footer .footer-logo img {
+  width: 160px;
+}
+
+.page-footer .copyright {
+  font-size: 0.75rem;
+  color: #d8d8d8;
+  text-align: center;
+}
+
 .footer-container {
   padding: 60px 4%;
 }
