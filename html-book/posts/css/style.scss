@@ -430,6 +430,29 @@ img {
 
 .page-bottom {
   background: url(../images/bottom-bg.svg);
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    @include pc() {
+      flex-direction: row;
+    }
+
+    div {
+      margin-bottom: 20px;
+      text-align: center;
+
+      @include pc() {
+        margin: 0 10px;
+      }
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+  }
 }
 
 .bottom-container {

@@ -484,6 +484,41 @@ img {
   background: url(../images/bottom-bg.svg);
 }
 
+.page-bottom .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .page-bottom .banner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.page-bottom .banner div {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .page-bottom .banner div {
+    margin: 0 10px;
+  }
+}
+
+.page-bottom .banner a:hover {
+  opacity: 0.8;
+}
+
 .bottom-container {
   padding: 60px 4% 0 4%;
 }
