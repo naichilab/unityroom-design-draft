@@ -63,11 +63,27 @@ img {
   background: url(../images/header-topline.svg) repeat-x;
   border-bottom: 1px solid #d8d8d8;
 
+  .header-container {
+    @include pc() {
+      margin: 0 auto;
+      padding: 0 20px;
+      max-width: 1040px;
+    }
+  }
+
   .header-logo {
     margin: 0;
     padding-left: 15px;
     font-size: 0;
     line-height: 0;
+
+    @include pc() {
+      padding: 0;
+      img {
+        width: 180px;
+      }
+    }
+
     img {
       width: 130px;
     }
@@ -119,6 +135,11 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include pc() {
+      display: block;
+      padding: 30px 0 0 0;
+    }
   }
 
   .navbtn {
@@ -129,29 +150,12 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
 
+    @include pc() {
+      display: none;
+    }
+
     &.close {
       background-image: url(../images/nav-mobile-close.svg);
-    }
-  }
-
-  @include pc() {
-    .header-container {
-      margin: 0 auto;
-      padding: 0 20px;
-      max-width: 1040px;
-    }
-    .header-logo {
-      padding: 0;
-      img {
-        width: 180px;
-      }
-    }
-    .sitetitle {
-      display: block;
-      padding: 30px 0 0 0;
-    }
-    .navbtn {
-      display: none;
     }
   }
 }
@@ -164,6 +168,12 @@ img {
   @include pc() {
     display: block;
     background: #efefef;
+
+    .bc-container {
+      margin: 0 auto;
+      padding: 12px 20px;
+      max-width: 1040px;
+    }
 
     .bc-nav {
       display: flex;
@@ -196,12 +206,6 @@ img {
         }
       }
     }
-
-    .bc-container {
-      margin: 0 auto;
-      padding: 12px 20px;
-      max-width: 1040px;
-    }
   }
 }
 
@@ -232,9 +236,15 @@ img {
 .post-contents {
   margin: 0 0 60px 0;
 
+  @include pc() {
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+  }
+
   > *:first-child {
     margin-top: 0px;
   }
+
   h2 {
     margin: 60px 0 30px 0;
     padding: 1rem 0;
@@ -242,18 +252,15 @@ img {
     border-bottom: 1px solid #000;
     font-size: 1.25rem;
   }
+
   p {
     margin: 30px 0;
     line-height: 1.9;
     text-align: justify;
   }
+
   mark {
     background: linear-gradient(transparent 50%, #ffff7c 50%);
-  }
-
-  @include pc() {
-    max-width: 600px;
-    margin: 0 auto 60px auto;
   }
 }
 
