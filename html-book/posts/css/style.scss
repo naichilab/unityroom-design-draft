@@ -149,6 +149,15 @@ img {
   }
 }
 
+.photo-caption {
+  margin: 30px 0;
+  figcaption {
+    margin-top: 5px;
+    font-size: 0.75rem;
+    color: #747474;
+  }
+}
+
 .post-footer {
   margin: 0 0 60px 0;
   @include pc() {
