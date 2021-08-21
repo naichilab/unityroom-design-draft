@@ -21,6 +21,7 @@ html *,
 /* フォント */
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 @include pc() {
   html {
@@ -483,6 +484,24 @@ img {
         &:hover {
           opacity: 0.8;
         }
+      }
+    }
+  }
+
+  .gotop {
+    text-align: center;
+    a {
+      display: inline-block;
+      padding: 1rem 4rem;
+      background: #000000;
+      border-radius: 20px 20px 0 0;
+      font-size: 1.25rem;
+      text-align: center;
+      color: #fff;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 0.8;
       }
     }
   }

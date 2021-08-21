@@ -14,6 +14,7 @@ html *,
 /* フォント */
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 768px) {
@@ -554,6 +555,25 @@ img {
 }
 
 .page-bottom .sns div a:hover {
+  opacity: 0.8;
+}
+
+.page-bottom .gotop {
+  text-align: center;
+}
+
+.page-bottom .gotop a {
+  display: inline-block;
+  padding: 1rem 4rem;
+  background: #000000;
+  border-radius: 20px 20px 0 0;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.page-bottom .gotop a:hover {
   opacity: 0.8;
 }
 
