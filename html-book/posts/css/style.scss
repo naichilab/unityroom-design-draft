@@ -72,6 +72,47 @@ img {
     }
   }
 
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include pc() {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    &.collapse {
+      display: none;
+    }
+    li a {
+      display: block;
+      padding: 20px 30px;
+      border-top: 1px solid #d8d8d8;
+      background: #efefef;
+      color: #000;
+      text-decoration: none;
+
+      @include pc() {
+        padding: 6px 20px 2px 20px;
+        border-top: none;
+        border-bottom: 4px solid transparent;
+        background: none;
+      }
+
+      &:hover {
+        background: #b8e5ea;
+
+        @include pc() {
+          border-bottom: 4px solid #73cbd6;
+          background: none;
+        }
+      }
+    }
+  }
+
   .sitetitle {
     display: flex;
     justify-content: space-between;
