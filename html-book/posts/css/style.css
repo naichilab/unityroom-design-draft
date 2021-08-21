@@ -130,6 +130,11 @@ img {
   text-align: justify;
 }
 
+.post-contents mark {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #ffff7c));
+  background: linear-gradient(transparent 50%, #ffff7c 50%);
+}
+
 @media (min-width: 768px) {
   .post-contents {
     max-width: 600px;

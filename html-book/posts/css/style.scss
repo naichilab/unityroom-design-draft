@@ -130,6 +130,9 @@ img {
     line-height: 1.9;
     text-align: justify;
   }
+  mark {
+    background: linear-gradient(transparent 50%, #ffff7c 50%);
+  }
 
   @include pc() {
     max-width: 600px;
