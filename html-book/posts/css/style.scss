@@ -199,8 +199,11 @@ img {
 }
 
 .post-info {
+  margin-bottom: 3px;
+  padding-bottom: 15px;
   font-size: 0.75rem;
   text-align: right;
+  background: url(../images/post-line.svg) bottom repeat-x;
   span {
     margin: 0 10px 0 0;
   }
