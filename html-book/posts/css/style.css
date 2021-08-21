@@ -292,6 +292,10 @@ img {
   margin: 0;
 }
 
+.chat .face img {
+  border-radius: 50%;
+}
+
 /* ページ下部コンテナ */
 .page-bottom {
   background: url(../images/bottom-bg.svg);
