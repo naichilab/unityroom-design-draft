@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* ページ全体に関わるCSSの設定 */
+html *,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
