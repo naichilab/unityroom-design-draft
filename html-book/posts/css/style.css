@@ -98,6 +98,24 @@ img {
   margin: 0 0 60px 0;
 }
 
+.post-contents > *:first-child {
+  margin-top: 0px;
+}
+
+.post-contents h2 {
+  margin: 60px 0 30px 0;
+  padding: 1rem 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 1.25rem;
+}
+
+.post-contents p {
+  margin: 30px 0;
+  line-height: 1.9;
+  text-align: justify;
+}
+
 @media (min-width: 768px) {
   .post-contents {
     max-width: 600px;
