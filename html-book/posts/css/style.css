@@ -243,14 +243,25 @@ img {
   margin: 30px 0;
 }
 
-.chat .chat-1st {
+.chat .chat-1st,
+.chat .chat-2nd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 15px 0;
 }
 
+.chat .chat-2nd {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .chat .chat-1st .face {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70px;
+          flex: 0 0 70px;
   margin: 0 10px 0 0;
 }
 
@@ -258,7 +269,21 @@ img {
   background: #b8e5ea;
 }
 
+.chat .chat-2nd .face {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70px;
+          flex: 0 0 70px;
+  margin: 0 0 0 10px;
+}
+
+.chat .chat-2nd .talk {
+  background: #ffff7c;
+}
+
 .chat .talk {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   padding: 1.5rem;
   border-radius: 20px;
 }
