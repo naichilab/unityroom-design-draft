@@ -78,6 +78,19 @@ img {
     align-items: center;
   }
 
+  .navbtn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/nav-mobile-open.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &.close {
+      background-image: url(../images/nav-mobile-close.svg);
+    }
+  }
+
   @include pc() {
     .header-container {
       margin: 0 auto;

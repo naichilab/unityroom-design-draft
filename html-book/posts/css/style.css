@@ -82,6 +82,19 @@ img {
           align-items: center;
 }
 
+.page-header .navbtn {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/nav-mobile-open.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.page-header .navbtn.close {
+  background-image: url(../images/nav-mobile-close.svg);
+}
+
 @media (min-width: 768px) {
   .page-header .header-container {
     margin: 0 auto;
