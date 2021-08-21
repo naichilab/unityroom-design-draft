@@ -519,6 +519,44 @@ img {
   opacity: 0.8;
 }
 
+.page-bottom .followus {
+  margin: 0 0 15px 0;
+  font-family: "Croissant One", cursive;
+  font-weight: 400;
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+.page-bottom .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.page-bottom .sns div {
+  margin: 0 10px;
+}
+
+.page-bottom .sns div a {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #73cbd6;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+}
+
+.page-bottom .sns div a:hover {
+  opacity: 0.8;
+}
+
 .bottom-container {
   padding: 60px 4% 0 4%;
 }
