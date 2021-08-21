@@ -613,6 +613,23 @@ img {
 // index.html
 
 .home {
+  .hero-container {
+    position: relative;
+
+    .hero-logo {
+      width: 260px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-130px, -53px);
+
+      @include pc() {
+        width: 400px;
+        transform: translate(-200px, -82px);
+      }
+    }
+  }
+
   .page-main {
     background: url(../images/home-bg.svg);
     .main-container {

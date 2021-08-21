@@ -707,6 +707,27 @@ img {
   }
 }
 
+.home .hero-container {
+  position: relative;
+}
+
+.home .hero-container .hero-logo {
+  width: 260px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-130px, -53px);
+          transform: translate(-130px, -53px);
+}
+
+@media (min-width: 768px) {
+  .home .hero-container .hero-logo {
+    width: 400px;
+    -webkit-transform: translate(-200px, -82px);
+            transform: translate(-200px, -82px);
+  }
+}
+
 .home .page-main {
   background: url(../images/home-bg.svg);
 }
