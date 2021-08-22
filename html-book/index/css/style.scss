@@ -646,6 +646,20 @@ img {
         margin: 0 auto 60px auto;
         text-align: center;
       }
+
+      h2 {
+        display: grid;
+        place-items: center;
+        margin: 0 auto 30px auto;
+        width: 130px;
+        height: 130px;
+        background: url(../images/home-titleshape.svg) no-repeat;
+        background-size: 130px 130px;
+        color: #ffffff;
+        font-family: "Croissant One", cursive;
+        font-weight: 400;
+        font-size: 20px;
+      }
     }
   }
 
