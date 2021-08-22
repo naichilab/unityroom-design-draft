@@ -801,12 +801,70 @@ img {
 
   .news {
     background: #efefef;
+
     .news-container {
       padding: 60px 4%;
+
       @include pc() {
         max-width: 740px;
         margin: 0 auto;
         padding: 60px 20px;
+      }
+
+      h2 {
+        margin: 0 0 30p 0;
+        font-family: "Croissant One", cursive;
+        font-weight: 400;
+        font-size: 1.875rem;
+
+        @include pc() {
+          max-width: 700px;
+          margin: 0 auto 30px auto;
+        }
+      }
+
+      .home-news {
+        padding: 20px;
+        background: #fff;
+        border-radius: 20px;
+
+        @include pc() {
+          max-width: 700px;
+          margin: 0 auto;
+          padding: 40px;
+        }
+
+        dl {
+          display: flex;
+          margin: 0;
+          padding: 20px 0;
+          border-top: 1px solid #d8d8d8;
+
+          &:last-child {
+            border-bottom: 1px solid #d8d8d8;
+          }
+        }
+
+        dt {
+          margin: 0 20px 0 0;
+          font-size: 0.875rem;
+          line-height: 1.5;
+        }
+
+        dd {
+          margin: 0;
+          font-size: 1rem;
+          line-height: 1.5;
+
+          a {
+            color: #73cbd6;
+            text-decoration: none;
+
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+        }
       }
     }
   }
