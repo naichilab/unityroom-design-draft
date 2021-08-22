@@ -928,4 +928,50 @@ img {
       line-height: 1.5;
     }
   }
+
+  .side-latest {
+    margin-bottom: 60px;
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-family: "Croissant One", cursive;
+      font-weight: 400;
+      font-size: 1.25rem;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      column-gap: 10px;
+      align-items: center;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #d8d8d8;
+      padding-bottom: 1rem;
+
+      a {
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    img {
+      border-radius: 50%;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.75rem;
+      line-height: 1.5;
+    }
+  }
 }

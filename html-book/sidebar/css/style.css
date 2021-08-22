@@ -1070,4 +1070,55 @@ img {
   font-size: 0.875;
   line-height: 1.5;
 }
+
+.sidebar-post .main-container .side-latest {
+  margin-bottom: 60px;
+}
+
+.sidebar-post .main-container .side-latest h2 {
+  margin: 0 0 10px 0;
+  font-family: "Croissant One", cursive;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.sidebar-post .main-container .side-latest ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-post .main-container .side-latest li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr;
+      grid-template-columns: 80px 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 1rem;
+}
+
+.sidebar-post .main-container .side-latest li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.sidebar-post .main-container .side-latest li a:hover {
+  opacity: 0.5;
+}
+
+.sidebar-post .main-container .side-latest img {
+  border-radius: 50%;
+}
+
+.sidebar-post .main-container .side-latest p {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
 /*# sourceMappingURL=style.css.map */
