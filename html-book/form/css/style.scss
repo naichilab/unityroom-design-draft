@@ -1115,5 +1115,22 @@ img {
     input[type="checkbox"] {
       margin-right: 10px;
     }
+
+    .form-button {
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    input[type="submit"] {
+      padding: 20px 30px;
+      background-color: #000;
+      border: none;
+      border-radius: 40px;
+      color: #fff;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 }
