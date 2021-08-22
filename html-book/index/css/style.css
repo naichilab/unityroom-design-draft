@@ -788,6 +788,80 @@ img {
 
 .home .page-main .main-container .latest-item {
   border: 1px solid #d8d8d8;
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .home .page-main .main-container .latest-item {
+    border: none;
+    background: none;
+  }
+}
+
+.home .page-main .main-container .latest-item .latest-image img {
+  margin: 0 0 10px 0;
+}
+
+.home .page-main .main-container .latest-item .latest-image img:hover {
+  opacity: 0.5;
+}
+
+.home .page-main .main-container .latest-item .latest-text {
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .home .page-main .main-container .latest-item .latest-text {
+    padding: 0;
+  }
+}
+
+.home .page-main .main-container .latest-item .latest-text h3 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.home .page-main .main-container .latest-item .latest-text h3 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.home .page-main .main-container .latest-item .latest-text h3 a:hover {
+  opacity: 0.5;
+}
+
+.home .page-main .main-container .home-tag {
+  margin-bottom: 1rem;
+}
+
+.home .page-main .main-container .home-tag span {
+  margin: 0 3px 3px 0;
+  padding: 2px 10px;
+  border: 1px solid #73cbd6;
+  border-radius: 100px;
+  font-size: 0.75rem;
+}
+
+.home .page-main .main-container .home-tag span a {
+  color: #73cbd6;
+  text-decoration: none;
+}
+
+.home .page-main .main-container .home-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.75rem;
+}
+
+.home .page-main .main-container .home-info span::before {
+  padding-right: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #73cbd6;
+  content: "\f3c5";
 }
 
 .home .news {
