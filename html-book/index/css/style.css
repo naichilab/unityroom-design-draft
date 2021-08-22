@@ -744,6 +744,12 @@ img {
   }
 }
 
+.home .page-main .main-container .home-lead {
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
 .home .news {
   background: #efefef;
 }
