@@ -743,6 +743,59 @@ img {
           content: "\f3c5";
         }
       }
+
+      .home-popular {
+        margin: 0 0 60px 0;
+        border-top: 1px solid #d8d8d8;
+
+        a {
+          display: block;
+          color: #000000;
+          text-decoration: none;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+
+        .popular-item {
+          display: flex;
+          align-items: center;
+          padding: 5px 0;
+          border-bottom: 1px solid #d8d8d8;
+        }
+
+        .popular-photo {
+          flex: 0 0 30%;
+          margin-right: 15px;
+          position: relative;
+        }
+
+        .popular-text {
+          flex: 1 1 auto;
+
+          h3 {
+            margin: 0 0 10px 0;
+            font-size: 1rem;
+            line-height: 1.5;
+
+            @include pc() {
+              font-size: 1.25rem;
+            }
+          }
+
+          p {
+            margin: 0 0 10px 0;
+            display: none;
+
+            @include pc() {
+              display: block;
+              font-size: 0.875rem;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
     }
   }
 
