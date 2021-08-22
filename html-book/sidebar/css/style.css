@@ -1121,4 +1121,63 @@ img {
   font-size: 0.75rem;
   line-height: 1.5;
 }
+
+.sidebar-post .main-container .side-book {
+  margin-bottom: 60px;
+}
+
+.sidebar-post .main-container .side-book h2 {
+  margin: 0 0 20px 0;
+  padding: 5px;
+  text-align: center;
+  font-family: "Croissant One", cursive;
+  font-weight: 400;
+  font-size: 1.25rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.sidebar-post .main-container .side-book .book-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr;
+      grid-template-columns: 80px 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.sidebar-post .main-container .side-book .book-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.sidebar-post .main-container .side-book .book-text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.sidebar-post .main-container .side-book .book-text p {
+  margin: 0;
+}
+
+.sidebar-post .main-container .side-book .buy {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.sidebar-post .main-container .side-book .buy button {
+  padding: 0.5rem 3rem;
+  border-radius: 100px;
+  border: none;
+  background: #000;
+  color: #fff;
+}
+
+.sidebar-post .main-container .side-book .buy button:hover {
+  opacity: 0.5;
+}
 /*# sourceMappingURL=style.css.map */
