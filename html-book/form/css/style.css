@@ -1268,4 +1268,8 @@ img {
   border: 1px solid #747474;
   line-height: 1.5;
 }
+
+.apply .form-container input[type="checkbox"] {
+  margin-right: 10px;
+}
 /*# sourceMappingURL=style.css.map */
