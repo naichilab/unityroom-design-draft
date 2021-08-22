@@ -1068,5 +1068,29 @@ img {
     @include pc() {
       padding: 0 20px 30px 20px;
     }
+
+    input,
+    textarea,
+    label {
+      font-size: 16px;
+    }
+
+    .form p {
+      margin: 0 0 30px 0;
+      line-height: 1.9;
+    }
+
+    .required {
+      margin-left: 10px;
+      font-size: 0.875rem;
+      color: #73cbd6;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #747474;
+    }
   }
 }
